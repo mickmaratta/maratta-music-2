@@ -1,0 +1,13 @@
+/* CSS HEX */
+--blue-jeans: #00a6fbff;
+--green-blue-crayola: #0582caff;
+--sapphire-blue: #006494ff;
+--prussian-blue: #003554ff;
+--rich-black-fogra-29: #051923ff;
+
+/* CSS HSL */
+--blue-jeans: hsla(200, 100%, 49%, 1);
+--green-blue-crayola: hsla(202, 95%, 41%, 1);
+--sapphire-blue: hsla(199, 100%, 29%, 1);
+--prussian-blue: hsla(202, 100%, 16%, 1);
+--rich-black-fogra-29: hsla(200, 75%, 8%, 1);
