@@ -513,7 +513,7 @@ header .title {
     #pricing-policy {
         transition: 0.5s;
     }
-    
+
     #pricing-policy:hover {
         font-size: larger;
     }
@@ -542,6 +542,7 @@ header .title {
     margin-top: 1rem;
     font-size: 1.6rem;
     color: var(--rich-black-fogra-29);
+    font-family: 'Lato', sans-serif;
 }
 
 input, select, textarea {
@@ -551,10 +552,10 @@ input, select, textarea {
 }
 
 button {
-    width: 50%;
     background-color: var(--green-blue-crayola);
     border: 2px solid var(--rich-black-fogra-29);
     text-transform: uppercase;
+    text-align: center;
     letter-spacing: 0.2rem;
     font-size: 1.5rem;
     margin-top: 1rem;
@@ -577,7 +578,6 @@ button {
     }
 
     button {
-        width: 15%;
         font-size: 2rem;
     }
 }
