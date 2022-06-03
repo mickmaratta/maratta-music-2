@@ -94,27 +94,16 @@ nav {
 }
 
 .logo img  {
-    margin-left: 5vw;
-    height: 8vh;
+    margin-left: 1vw;
+    height: 9vh;
     width: auto;
-}
-
-
-#nav-line {
-    height: 0.2rem;
-    width:15vw;
-    position: absolute;
-    top: 6.5vh;
-    margin-left: 1.5vw;
-    background-color: black;
-    z-index: 100;
 }
     
 .nav-links {
     position: absolute;
     background-color: white;
     right: 0px;
-    height: 45vh;
+    height: 50vh;
     top: 10vh;
     display: flex;
     flex-direction: column;
@@ -178,6 +167,8 @@ nav {
     transform: rotate(45deg) translate(-5px,-6px);
 }
 
+#desktop-logo {display: none;}
+
 @media screen and (min-width: 860px) {
     .nav-links {
         position: static;
@@ -209,9 +200,9 @@ nav {
         font-size: 1.5rem;
     }
 
-    .burger {
-        display: none;
-    }
+    .burger { display: none;}
+    #desktop-logo {display: block;}
+    #mobile-logo {display: none;}
 }
 
 /* HEADER */
@@ -221,7 +212,7 @@ nav {
 }
 
 header {
-    background-image: url(../media/images/header-img.jpg);
+    background-image: url(../resources/images/header-img.jpg);
     background-size: cover;
     background-position: center;
     height: 45vh;
@@ -336,6 +327,7 @@ header .title {
 #lessons h3 {
     font-size: 1.5rem;
 }
+
 .card-container {
     display: flex;
     flex-wrap: wrap;
@@ -345,9 +337,9 @@ header .title {
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     border-radius: 20px;
-    width: 35vw;
+    width: 40vw;
     height: 15vh;
-    margin: 2rem 2rem;
+    margin: 1.5rem 1.5rem;
     color: white;
     font-size: 4rem;
     letter-spacing: 0.3rem;
@@ -375,29 +367,30 @@ header .title {
 
 .desktop-overlay {display: none;}
 
+
     /* LESSON PICTURES */
 #piano-lessons {
-    background-image: url(../media/images/piano-lessons.jpeg);
+    background-image: url(../resources/images/piano-lessons.jpeg);
     background-size: cover;
 }
 #gtr-lessons {
-    background-image: url(../media/images/guitar-lessons.jpeg);
+    background-image: url(../resources/images/guitar-lessons.jpeg);
     background-size: cover;
 }
 #theory-lessons {
-    background-image: url(../media/images/music-theory.jpeg);
+    background-image: url(../resources/images/music-theory.jpeg);
     background-size: cover;
 }
 #songwriting-lessons {
-    background-image: url(../media/images/songwriting.jpeg);
+    background-image: url(../resources/images/songwriting.jpeg);
     background-size: cover;
 }
 #vocal-lessons {
-    background-image: url(../media/images/vocals.jpeg);
+    background-image: url(../resources/images/vocals.jpeg);
     background-size: cover;
 }
 #drum-lessons {
-    background-image: url(../media/images/drums.jpeg);
+    background-image: url(../resources/images/drums.jpeg);
     background-size: cover;
 }
 
@@ -405,6 +398,7 @@ header .title {
     .card {
         height: 30vh;
         transition: 0.5s;
+        margin: 2.5rem;
     }
 
     .card h3 {
@@ -563,8 +557,30 @@ button {
     border-radius: 20px;
     color: whitesmoke;
     cursor: pointer;
-
 }
+
+#sign-up .thank-you {
+    background-color: var(--green-blue-crayola);
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.2rem;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    padding: 5rem 0;
+    border-radius: 20px;
+    border: 2px solid var(--rich-black-fogra-29);
+    color: whitesmoke;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: center;
+    cursor: default;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
 #name {width: 100%;}
 #email {width: 49%;}
 #phoneNum {width: 49%;}
@@ -580,6 +596,11 @@ button {
     button {
         font-size: 2rem;
     }
+
+    #sign-up .thank-you {
+        padding: 5rem;
+    }
+
 }
 /* FOOTER */
 
