@@ -30,6 +30,7 @@ body {
 
 h1 {
     font-size: 2rem;
+    text-transform: uppercase;
 }
 
 h2 {
@@ -38,16 +39,17 @@ h2 {
     text-transform: uppercase;
 }
 
-h3 {
-    font-size: 2rem;
-}
+h3 { font-size: 1.5rem; }
 
-p {
-    font-size: 1.6rem;
-}
+p { font-size: 1.6rem; }
 
-a {
+ul { font-size: 2.3rem; }
+
+span { font-size: 1.6rem; }
+
+a { 
     text-decoration: none;
+    font-size: 1.6rem;
 }
 
 .container h2 {
@@ -56,7 +58,7 @@ a {
 }
 .container {
     width: 90vw;
-    background-color: var(--green-blue-crayola);
+    background-color: var(--prussian-blue);
     align-self: center;
     color: whitesmoke;
     border-radius: 20px;
@@ -66,8 +68,15 @@ a {
 }
 
 @media screen and (min-width: 860px) {
-    h2 {
-        font-size: 3rem;
+    h1 {font-size: 3.5rem;}
+    h2 {font-size: 3rem;}
+    h3 {font-size: 2.5rem;}
+    ul {font-size: 3rem;}
+    span {font-size: 2rem;}
+    a {font-size: 2rem;}
+    p {
+        font-size: 2rem;
+        line-height: 3rem;
     }
 }
 
@@ -90,7 +99,7 @@ nav {
     gap: 1.5rem;
     text-transform: uppercase;
     letter-spacing: 0.3rem;
-    color: var(--rich-black-fogra-29);
+    color: var(--prussian-blue);
 }
 
 .logo img  {
@@ -211,7 +220,7 @@ nav {
 }
 
 header {
-    background-image: url(../resources/images/header-img.jpg);
+    background-image: url(../resources/images/header-img.webp);
     background-size: cover;
     background-position: center;
     height: 45vh;
@@ -266,14 +275,12 @@ header .title {
 }
 
 .button p {
-    font-size: 1.4rem;
     font-weight: 300;
     font-style: italic;
     margin-top: 0.5rem;
 }
 
 .button p span {
-    font-size: 1.4rem;
     font-weight: 800;
 }
 
@@ -290,7 +297,7 @@ header .title {
     }
 
     .button a {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     .button:hover i {
@@ -321,10 +328,6 @@ header .title {
     letter-spacing: 0.3rem;
     color: var(--rich-black-fogra-29);
     text-transform: uppercase;
-}
-
-#lessons h3 {
-    font-size: 1.5rem;
 }
 
 .card-container {
@@ -369,27 +372,27 @@ header .title {
 
     /* LESSON PICTURES */
 #piano-lessons {
-    background-image: url(../resources/images/piano-lessons.jpeg);
+    background-image: url(../resources/images/piano-lessons.webp);
     background-size: cover;
 }
 #gtr-lessons {
-    background-image: url(../resources/images/guitar-lessons.jpeg);
+    background-image: url(../resources/images/guitar-lessons.webp);
     background-size: cover;
 }
 #theory-lessons {
-    background-image: url(../resources/images/music-theory.jpeg);
+    background-image: url(../resources/images/music-theory.webp);
     background-size: cover;
 }
 #songwriting-lessons {
-    background-image: url(../resources/images/songwriting.jpeg);
+    background-image: url(../resources/images/songwriting.webp);
     background-size: cover;
 }
 #vocal-lessons {
-    background-image: url(../resources/images/vocals.jpeg);
+    background-image: url(../resources/images/vocals.webp);
     background-size: cover;
 }
 #drum-lessons {
-    background-image: url(../resources/images/drums.jpeg);
+    background-image: url(../resources/images/drums.webp);
     background-size: cover;
 }
 
@@ -401,7 +404,6 @@ header .title {
     }
 
     .card h3 {
-        font-size: 2rem;
         font-weight: 600;
         text-transform: uppercase;
         letter-spacing: 0.3rem;
@@ -426,7 +428,7 @@ header .title {
     }
 
     .card:hover {
-        transform: scale(1.03);
+        transform: scale(1.01);
     }
 
 }
@@ -446,7 +448,6 @@ header .title {
 }
 
 #pricing h3 {
-    font-size: 1.8rem;
     text-transform: uppercase;
     letter-spacing: 0.2rem;
 }
@@ -458,8 +459,7 @@ header .title {
 
 #pricing a {
     text-decoration: none;
-    color: var(--rich-black-fogra-29);
-    font-size: 1.6rem;
+    color: var(--blue-jeans);
 }
 
 .promotions h3 {
@@ -468,13 +468,15 @@ header .title {
 }
 .promotions ul {
     padding-left: 1rem;
-
+    text-align: center;
+    list-style: none;
 }
 
 .promotions li {
-    font-size: 1.8rem;
     line-height: 2.5rem;
 }
+
+.pricing-info { font-size: 1.3rem;}
 
 .pricing-desktop{display: none;}
 
@@ -492,15 +494,6 @@ header .title {
         width: 25vw;
         height: 15vh;
         padding: 1rem;
-    }
-
-    #pricing ul {
-        text-align: center;
-        list-style: none;
-    }
-
-    #pricing .promotions h3 {
-        font-size: 2.5rem;
     }
 
     #pricing-policy {
@@ -545,7 +538,7 @@ input, select, textarea {
 }
 
 button {
-    background-color: var(--green-blue-crayola);
+    background-color: var(--sapphire-blue);
     border: 2px solid var(--rich-black-fogra-29);
     text-transform: uppercase;
     text-align: center;
@@ -559,7 +552,7 @@ button {
 }
 
 #sign-up .thank-you {
-    background-color: var(--green-blue-crayola);
+    background-color: var(--prussian-blue);
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 0.2rem;
